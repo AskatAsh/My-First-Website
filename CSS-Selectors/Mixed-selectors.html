@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mixed Selectors</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #heading {
+            background-color: rgb(255, 244, 225);
+            padding: 10px 20px;
+        }
+
+        #sub-heading {
+            text-decoration: underline;
+        }
+
+        #section-1 {
+            background-color: aliceblue;
+            margin-top: 30px;
+        }
+        #section-2{
+            background-color: rgb(250, 239, 224);
+            padding: 20px 0px 40px 0px;
+        }
+        .t-center{
+            text-align: center;
+        }
+        .m-10 {
+            margin: 10px 10px;
+        }
+
+        .text {
+            margin-left: 10px;
+            font-weight: 300;
+            word-spacing: 0.1rem;
+            line-height: 1.5rem;
+        }
+
+        .t-bold {
+            font-weight: bold;
+        }
+
+        .t-mark {
+            background-color: rgb(255, 225, 221);
+        }
+        .form-heading{
+            margin: 20px 0px;
+        }
+        input[type="password"], input[type="email"], input[type="text"]{
+            color: rgb(69, 69, 69);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Mixed Selectors multiple classes, combined selectors, attribute, div, span</h1>
+
+    <div id="section-1">
+        <h2 id="sub-heading" class="m-10">First sub heading of the main heading</h2>
+        <p class="text t-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, beatae laboriosam?
+        Nulla rerum cumque tempora, <span class="t-bold t-mark">error hic reiciendis inciduntcupiditate</span>exercitationem, ab excepturi iure consequatur quisquam deserunt ducimus? Vero, quaerat?
+        </p>
+    </div>
+    <div class="m-10 t-center" id="section-2">
+        <form action="">
+            <h3 class="form-heading">A simple login form</h3>
+            User Name: <input type="text">
+            <br><br>
+            Email: <input type="email">
+            <br><br>
+            Password: <input type="password">
+
+        </form>
+    </div>
+</body>
+
+</html>
