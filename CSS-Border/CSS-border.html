@@ -6,39 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border styling in css</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #head{
+            margin: 15px 30px;
+        }
         .blog {
             background-color: #fff7e1;
-            border: 10px solid #3d3d3d;
+            /* border: 5px solid #3d3d3d; */
+        }
+        .blog-1{
+            margin: 30px;
+            border: 2px dashed #3d3d3d;
+            border-left: 10px solid #3d3d3d;
+        }
+        .blog-2{
+            /* margin: top right bottom left; */
+            margin: 30px 20px 10px 20px;
+            border: 3px groove #3d3d3d;
+            border-top: 10px solid #3d3d3d;
+            border-radius: 5px;
+        }
+        .blog-3{
+            /* margin: top right-left bottom; */
+            margin: 30px 10px 15px;
+            border: 4px dotted #3d3d3d;
+            border-radius: 5px;
+        }
+        .blog-4{
+            /* margin: top-bottom right-left; */
+            margin: 40px 80px;
+            border: 5px double #3d3d3d;
+            /* border-style: ridge; */
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-    <h1>CSS Borders Border, border-radius, Margin, different ways to set margin</h1>
+    <h1 id="head">CSS Borders Border, border-radius, Margin, different ways to set margin</h1>
     <hr size="1px" color="#eee;">
 
-    <div class="blog">
+    <div class="blog blog-1">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod esse voluptatibus dolorem, vel
         aspernatur voluptate, animi nobis fuga et eum nulla voluptates aliquid inventore amet id accusamus, hic
         quibusdam aut maxime. Dicta commodi quo saepe perferendis tempora nulla quis cumque. Beatae quibusdam
         doloremque ut reprehenderit eaque? Voluptate, reiciendis accusamus!</p>
     </div>
-    <div class="blog">
+    <div class="blog blog-2">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod esse voluptatibus dolorem, vel
         aspernatur voluptate, animi nobis fuga et eum nulla voluptates aliquid inventore amet id accusamus, hic
         quibusdam aut maxime. Dicta commodi quo saepe perferendis tempora nulla quis cumque. Beatae quibusdam
         doloremque ut reprehenderit eaque? Voluptate, reiciendis accusamus!</p>
     </div>
-    <div class="blog">
+    <div class="blog blog-3">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod esse voluptatibus dolorem, vel
         aspernatur voluptate, animi nobis fuga et eum nulla voluptates aliquid inventore amet id accusamus, hic
         quibusdam aut maxime. Dicta commodi quo saepe perferendis tempora nulla quis cumque. Beatae quibusdam
         doloremque ut reprehenderit eaque? Voluptate, reiciendis accusamus!</p>
     </div>
-    <div class="blog">
+    <div class="blog blog-4">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod esse voluptatibus dolorem, vel
         aspernatur voluptate, animi nobis fuga et eum nulla voluptates aliquid inventore amet id accusamus, hic
