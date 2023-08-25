@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .text {
+            width: 400px;
+            border-left: 5px solid #3d3d3d;
+            padding: 10px;
+            background-color: rgb(250, 243, 233);
+            /* box-sizing: border-box; */
+        }
+
+        .note {
+            width: 300px;
+            height: 150px;
+            border: 3px dashed #228e94;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgb(239, 255, 255);
+            color: rgb(10, 123, 123);
+            box-sizing: border-box;
+        }
+        .box-1{
+            border: 20px solid rgb(221, 221, 221);
+            width: 500px;
+            height: 240px;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        .box-2{
+            border: 20px solid #e3f1ff;
+            width: 500px;
+            height: 240px;
+            margin: 20px;
+            padding: 20px;
+            /* box-sizing: border-box; */
+        }
+        .note-2{
+            background-color: rgb(251, 243, 234);
+            border-color: #cc7c1a;
+            color: #b66c06;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Box model Padding, border, content, height, width</h1>
+    <div class="box-1">
+        <h2 class="head">First box with border-box property</h2>
+        <p class="text">The width and height of this box is 500px and 240 px. As this box element has border-box propery, so no matter what the size of margin padding and border are the width and height are adjusted in way that they don't change.</p>
+    </div>
+    <div class="box-2">
+        <h2 class="head">Second box without border-box property</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, porro atque eveniet obcaecati ad
+            enim, eum veritatis harum alias possimus ratione numquam expedita et? Atque assumenda laboriosam natus.
+            Fuga, dolores?</p>
+    </div>
+    <div class="box-3">
+        <h2 class="head">The total width of an element should be calculated like this:</h2>
+        <p class="note">Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+        <br><br>
+        Total with of box-2 is = 580px
+        </p>
+    </div>
+    <div class="box-4">
+        <h2 class="head">The total height of an element should be calculated like this:</h2>
+        <p class="note note-2">Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+        <br><br>
+        Total with of box-2 is = 320px
+        </p>
+    </div>
+</body>
+
+</html>
