@@ -19,7 +19,7 @@
 .head{
     background-color: bisque;
 }
-.container{
+.box-1{
     /* width: 100%; */
     height: 500px;
     padding: 50px;
