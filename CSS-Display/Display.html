@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        .box-1{
+            border: 2px solid lightgray;
+            width: 500px;
+        }
+        .box-2{
+            border: 2px solid lightgray;
+            width: 500px;
+        }
+        .text-1 {
+            display: none;
+            border: 2px solid lightblue;
+        }
+        .text-2{
+            visibility: hidden;
+            border: 2px solid lightblue;
+        }
+        .inline{
+            display: inline;
+            font-weight: bold;
+            background-color: antiquewhite;
+        }
+        .block{
+            display: block;
+            font-weight: bold;
+            background-color: #e4f3ff;
+            height: 100px;
+            border: 5px solid lightblue;
+        }
+        .block-2{
+            display: block;
+            font-weight: bold;
+            background-color: #e4f3ff;
+        }
+        .in-block{
+            display: inline-block;
+            font-weight: bold;
+            background-color: #ffe7fa;
+            height: 80px;
+            width: 600px;
+        }
+        .in-block-2{
+            display: inline-block;
+            font-weight: bold;
+            background-color: #ffe7fa;
+            border: 2px dashed #ad88a5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Display none, hidden, inline, block, inline-block, box-shadow</h1>
+    <div class="box-1">
+        <h3>Display none - There is a paragraph below which has display none property</h3>
+        <p class="text-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate harum modi cumque omnis ea, voluptatem veritatis, eaque delectus unde aut. Eius minus aperiam maiores qui cum atque odit saepe.
+        </p>
+    </div>
+    <div class="box-2">
+        <h3>Visibility hidden - There is a paragraph below which has visibility hidden property</h3>
+        <p class="text-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate harum modi cumque
+        omnis ea, voluptatem veritatis, eaque delectus unde aut. Eius minus aperiam maiores qui cum atque odit saepe.
+        </p>
+    </div>
+    <div>
+        <h3>Display none removes the selected element completely</h3>
+        <h3>Visibility hidden removes the content of the selected element but it doesn't remove the space ocupied by the element</h3>
+    </div>
+    <div>
+        <h3>Difference in display: inline, block and inline-block</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto provident quasi sit, ad magnam, <p class="inline">This is a paragraph which has the display: inline; property</p> fugit dolorum perspiciatis veniam nisi quibusdam!
+        <br><br><hr size="1" color="lightgray"><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laudantium harum autem ullam facere voluptatibus libero nemo quasi, amet tenetur officia <span class="block">This is a span inline element. But it has the css property of display: block; so it acts as a block level element. We can give it width height and many other properties which is used for block level elements. The height of this span element is 100px.</span> Perferendis laboriosam reiciendis quis animi recusandae, accusantium fuga ipsam tempore optio labore?
+        <br><br><hr size="1" color="lightgray"><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum consectetur mollitia <span class="in-block">This is another span tag element which has the display: inline-block; property. So it can act both as inline and block level element.</span>libero vero adipisci enim, optio qui temporibus et aspernatur praesentium itaque officiis. Aliquam aperiam optio suscipit nisi. Quia, accusantium?
+    </div>
+    <br><br><hr size="1" color="lightgray"><br>
+    Lorem ipsum dolor, sit amet <p class="inline">Paragraph displayed inline</p>consectetur adipisicing elit. Impedit, error.
+    Lorem ipsum dolor, sit amet <span class="block-2">Span tag displayed as block</span>consectetur adipisicing elit. Impedit, error.
+    Lorem ipsum dolor, sit amet <p class="in-block-2">Paragraph displayed inline-block</p> consectetur adipisicing elit. Impedit, error.
+    
+</body>
+
+</html>
