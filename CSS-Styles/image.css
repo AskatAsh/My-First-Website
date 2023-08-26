@@ -2,3 +2,31 @@
     margin: 0;
     padding: 0;
 }
+.m-10{
+    margin: 10px;
+}
+.p-10{
+    padding: 10px;
+}
+.btn{
+    margin-left: 20px;
+    background-color: rgba(156, 178, 255, 0.133);
+    font-weight: bold;
+    border: 2px solid #bdd2fb9e;
+    border-radius: 5px;
+    color: white;
+}
+.head{
+    background-color: bisque;
+}
+.container{
+    /* width: 100%; */
+    height: 500px;
+    padding: 50px;
+    color: white;
+    background-image: url('../Images/white\ snow\ wolf.jpg');
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
