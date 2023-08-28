@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-5 Semantic elements</title>
+    <style>
+        nav > ul > li{
+            list-style-type: none;
+            display: inline;
+            margin-right: 20px;
+        }
+        ul > li > a{
+            text-decoration: none;
+        }
+        figcaption{
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">Blog</a></li>
+                <li><a href="http://">Contact us</a></li>
+                <li><a href="http://">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main webpage section -->
+    <main>
+        <article>
+            <header>
+                <h2>This is the first header of the first article</h2>
+                <p>Published on: <time datetime="28-8-2023">23rd August, 2023</time> </p>
+            </header>
+            <figure>
+                <img src="../Assets/images/landscape-nature-sky-sunset.jpg" alt="" width="100%">
+                <figcaption>This is a simple image of nature when the sun sets in the west</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <p>
+            &copy; 2023; All rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
