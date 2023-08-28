@@ -9,6 +9,17 @@
             text-align: center;
             margin-top: 50px;
         }
+        form > label{
+            display: block;
+            margin-bottom: 15px;
+        }
+        form > fieldset{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        form > fieldset > label{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -17,7 +28,62 @@
     </header>
     <main>
         <section>
+            <h2>Please fill out this form</h2>
             <form>
+                <label for="name">
+                    Your name:
+                    <input type="text" name="info" id="name" placeholder="write your full name">
+                </label>
+                <label for="email">
+                    Your email:
+                    <input type="text" name="info" id="email" placeholder="write your email">
+                </label>
+                <label for="pass">
+                    Your password:
+                    <input type="password" name="info" id="pass" placeholder="your password">
+                </label>
+                <fieldset>
+                    <legend>Select your Gender</legend>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male">
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female">
+                        Female
+                    </label>
+                    <label for="other">
+                        <input type="radio" name="gender" id="other">
+                        Other
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your favourite food?</legend>
+                    <label for="snacks">
+                        <input type="checkbox" name="food" id="snacks">
+                        Snacks
+                    </label>
+                    <label for="biryani">
+                        <input type="checkbox" name="food" id="biryani">
+                        Biryani
+                    </label>
+                    <label for="pizza">
+                        <input type="checkbox" name="food" id="pizza">
+                        Pizza
+                    </label>
+                    <label for="burger">
+                        <input type="checkbox" name="food" id="burger">
+                        Burger
+                    </label>
+                    <label for="rosogolla">
+                        <input type="checkbox" name="food" id="rosogolla">
+                        Rosogolla
+                    </label>
+                </fieldset>
+                <label for="text">
+                    <h3>Write your message here:</h3>
+                    <textarea name="message" id="" cols="45" rows="5"></textarea>
+                </label>
                 
             </form>
         </section>
