@@ -1,0 +1,27 @@
+header{
+    /* background-color: aliceblue; */
+    /* height: 80px; */
+}
+nav > ul{
+    background-color: aliceblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav > ul > li{
+    list-style-type: none;
+    /* margin-right: 20px; */
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px 20px;
+    background-color: #edcdfd;
+}
+nav > ul > li > a:hover{
+    text-decoration: none;
+    color: #fffef6;
+    background-color: #242424;
+}
