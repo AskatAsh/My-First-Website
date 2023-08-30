@@ -9,20 +9,21 @@
 <body>
     <h1>HTML Table Table, tr, th, td, caption, colspan, thead, tbody, tfoot
     </h1>
-    <table>
+    <hr size="1" color="lightgray"><br>
+    <table cellspacing="0">
         <caption>Student course information with enrollment year and grand</caption>
         <thead>
             <tr>
-                <th>Course name</th>
-                <th>Student name</th>
-                <th>Enrollment year</th>
+                <th rowspan="3">Course name</th>
+                <th rowspan="3">Student name</th>
+                <th colspan="2">Enrollment year</th>
             </tr>
             <tr>
                 <th>2020</th>
                 <th>2021</th>
             </tr>
             <tr>
-                <th>Grade</th>
+                <th colspan="2">Grade</th>
             </tr>
         </thead>
         <tbody>
@@ -52,7 +53,11 @@
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <td colspan="2">Grades Total =</td>
+                <td>165%</td>
+                <td>185%</td>
+            </tr>
         </tfoot>
     </table>
 </body>
