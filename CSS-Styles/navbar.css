@@ -24,7 +24,10 @@ nav > ul li:hover{
 nav > ul li:hover > a{
     color: #f9f9f9;
 }
-/* sub-menu */
+nav > ul > li:hover > .sub-nav{
+    display: block;
+}
+/* sub-menu-1 */
 .sub-nav{
     display: none;
     position: absolute;
@@ -35,6 +38,17 @@ nav > ul li:hover > a{
 .sub-nav > li{
     background-color: #fcebd6;
 }
-nav > ul > li:hover > ul{
+/* sub-menu-2 */
+.sub-nav-2{
+    display: none;
+    position: absolute;
+    margin-left: 66px;
+    margin-top: -28px;
+    padding: 0px;
+}
+.sub-nav-2 > li{
+    background-color:#f0ffd0
+}
+.sub-nav > li:hover > ul{
     display: block;
 }
