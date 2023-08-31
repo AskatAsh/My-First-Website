@@ -18,7 +18,36 @@ nav > ul > li > a{
     background-color: #edcdfd;
 }
 nav > ul > li > a:hover{
-    text-decoration: none;
     color: #fffef6;
     background-color: #242424;
+}
+/* sub-menu */
+.sub-nav{
+    display: none;
+    position: absolute;
+    /* top: 70px; */
+    background-color: #fbbc85;
+    margin-top: 15px;
+    padding: 0px;
+}
+nav > ul > li:hover > ul{
+    display: block;
+}
+.sub-nav > li{
+    list-style-type: none;
+    /* margin-top: 20px; */
+    padding: 10px 15px;
+}
+.sub-nav > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* padding: 20px 20px; */
+}
+.sub-nav li:hover{
+    background-color: #242424;
+    cursor: pointer;
+}
+.sub-nav > li:hover > a{
+    color: #fffef6;
 }
