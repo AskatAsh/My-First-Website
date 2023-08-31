@@ -6,14 +6,16 @@ nav > ul{
     align-items: center;
     justify-content: center;
 }
-nav > ul > li{
+nav > ul li{
     list-style-type: none;
     /* margin-right: 20px; */
 }
-nav > ul > li > a{
+nav > ul li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+nav > ul > li > a{
     padding: 15px 20px;
     background-color: #edcdfd;
 }
@@ -23,9 +25,8 @@ nav > ul > li > a:hover{
 }
 /* sub-menu */
 .sub-nav{
-    display: none;
+    /* display: none; */
     position: absolute;
-    /* top: 70px; */
     background-color: #fbbc85;
     margin-top: 15px;
     padding: 0px;
@@ -34,15 +35,9 @@ nav > ul > li:hover > ul{
     display: block;
 }
 .sub-nav > li{
-    list-style-type: none;
+    /* list-style-type: none; */
     /* margin-top: 20px; */
     padding: 10px 15px;
-}
-.sub-nav > li > a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    /* padding: 20px 20px; */
 }
 .sub-nav li:hover{
     background-color: #242424;
