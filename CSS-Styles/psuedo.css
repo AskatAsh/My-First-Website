@@ -39,7 +39,7 @@
 }
 /* z-index */
 .container-2{
-    background-color: rgb(231, 255, 194);
+    background-color: rgba(231, 255, 194, 0.5);
     width: 350px;
     padding: 20px;
     box-sizing: border-box;
