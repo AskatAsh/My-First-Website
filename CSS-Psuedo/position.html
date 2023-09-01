@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS position</title>
+    <link rel="stylesheet" href="../CSS-Styles/position.css">
 </head>
 <body>
     <h1>Position static relative absolute fixed sticky</h1>
-    <ul>
+    <ol>
         <!-- flow related -->
         <li>Position: Static</li>
+        <p>~ Default position. Cannot change its place.</p>
         <li>Position: Relative</li>
+        <p>Relative to its own position. Can change its place but also don't disappear from its own position.
+        </p>
         <li>Position: Absolute</li>
+        <p>Absolute to the parent element. It completely disappears from it original place to change position.</p>
         <!-- scroll related -->
         <li>Position: Fixed</li>
         <li>Position: Sticky</li>
-    </ul>
+    </ol>
+    <div class="main-container">
+        <div class="pos static">Static</div>
+        <div class="pos static">Relative</div>
+        <div class="pos static">Absolute</div>
+    </div>
 </body>
 </html>
