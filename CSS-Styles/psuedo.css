@@ -37,3 +37,27 @@
 .container > input[type="text"]::placeholder{
     color: #2a2a2a;
 }
+/* z-index */
+.box{
+    position: relative;
+    /* text-align: center; */
+}
+.boy{
+    top: 15px;
+}
+.ring{
+    top: -50px;
+}
+.boy{
+    z-index: 99;
+}
+.water:hover .boy{
+    z-index: -99;
+}
+.water{
+    top: -140px;
+    left: 32px;
+}
+.water > img{
+    width: 100px;
+}
