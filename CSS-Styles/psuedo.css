@@ -1,0 +1,39 @@
+.container{
+    background-color: aliceblue;
+    width: 80%;
+    padding: 20px 20px;
+}
+.container > h3{
+    margin: 0;
+    padding: 0;
+}
+/* a link */
+.container > h3 > a{
+    color: black;
+    text-decoration: none;
+}
+/* visited */
+.container > h3 > a:visited{
+    color: rgb(188, 0, 132);
+}
+/* hover */
+.container > h3 > a:hover{
+    color: rgb(0, 188, 19);
+}
+/* active */
+.container > h3 > a:active{
+    background-color: black;
+    color: aliceblue;
+}
+.container > input[type="text"]{
+    padding: 10px;
+    /* border: none; */
+    background-color: rgb(250, 224, 215);
+}
+.container > input[type="text"]:focus{
+    /* border: 2px solid #2a2a2a; */
+    background-color: rgb(253, 251, 225);
+}
+.container > input[type="text"]::placeholder{
+    color: #2a2a2a;
+}
