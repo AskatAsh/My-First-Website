@@ -17,7 +17,7 @@
 .container{
     position: relative;
     border: 2px solid;
-    height: 200px;
+    height: 300px;
     margin-top: 10px;
 }
 .vertical-center{
@@ -28,6 +28,16 @@
 }
 .element-center{
     /* verticaly and horizontaly position center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* center align image using position */
+.img-center > img{
+    width: 150px;
+}
+.img-center{
     position: absolute;
     top: 50%;
     left: 50%;
