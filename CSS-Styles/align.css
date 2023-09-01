@@ -18,10 +18,18 @@
     position: relative;
     border: 2px solid;
     height: 200px;
+    margin-top: 10px;
 }
-.element-center{
-    /* vertically position center */
+.vertical-center{
+    /* verticaly position center */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+.element-center{
+    /* verticaly and horizontaly position center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
