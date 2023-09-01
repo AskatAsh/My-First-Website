@@ -13,3 +13,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+/* align element using position */
+.container{
+    position: relative;
+    border: 2px solid;
+    height: 200px;
+}
+.element-center{
+    /* vertically position center */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
