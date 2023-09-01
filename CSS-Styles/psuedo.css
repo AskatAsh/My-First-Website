@@ -94,3 +94,19 @@
     padding: 20px 20px 20px 0px;
     margin-left: 10px;
 }
+/* more psuedo */
+.text{
+    width: 500px;
+    padding: 20px;
+    font-size: 18px;
+}
+.text::first-letter{
+    font-size: 46px;
+}
+.text::first-line{
+    background-color: burlywood;
+}
+.text::selection{
+    /* user-select: none; */
+    background-color: yellowgreen;
+}
