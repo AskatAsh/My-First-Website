@@ -59,8 +59,8 @@
 .boy{
     z-index: 99;
 }
-.water:hover .boy{
-    z-index: -99;
+.boy:hover{
+    z-index: -1;
 }
 .water{
     top: -140px;
