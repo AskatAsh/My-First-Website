@@ -29,7 +29,7 @@ nav > ul > li:hover > .sub-nav{
 }
 /* sub-menu-1 */
 .sub-nav{
-    display: none;
+    /* display: none; */
     position: absolute;
     margin-left: -15px;
     margin-top: 10px;
@@ -40,14 +40,15 @@ nav > ul > li:hover > .sub-nav{
 }
 /* sub-menu-2 */
 .sub-nav-2{
-    display: none;
+    /* display: none; */
     position: absolute;
-    margin-left: 66px;
+    margin-left: -135px;
     margin-top: -28px;
     padding: 0px;
 }
 .sub-nav-2 > li{
-    background-color:#f0ffd0
+    background-color:#f0ffd0;
+    width: 90px;
 }
 .sub-nav > li:hover > ul{
     display: block;
