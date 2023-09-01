@@ -56,3 +56,7 @@ img{
     display: flex;
     justify-content: center;
 }
+/* align text and image horizontaly and verticaly with flexbox */
+.container-3{
+    align-items: center;
+}
