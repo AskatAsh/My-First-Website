@@ -36,8 +36,15 @@
     border-left: 5px solid rgb(225, 186, 134);
 }
 .sticky{
-    background-color: #fcb3b38e;
+    background-color: rgba(253, 162, 162, 0.55);
     border: none;
     position: sticky;
     top: 10px;
+}
+.fixed{
+    background-color: rgba(174, 255, 174, 0.55);
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    border: none;
 }
