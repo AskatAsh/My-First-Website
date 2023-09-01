@@ -1,0 +1,29 @@
+.pos{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #424242;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.main-container{
+    background-color: #dbe8e2;
+    width: 650px;
+    position: relative;
+}
+.static{
+    background-color: #fae2c2;
+}
+.relative{
+    background-color: #bbf2f2;
+    position: relative;
+    top: 20px;
+    left: 250px;
+}
+.absolute{
+    background-color: #cefaa2;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
