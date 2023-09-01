@@ -38,9 +38,17 @@
     color: #2a2a2a;
 }
 /* z-index */
+.container-2{
+    background-color: rgb(231, 255, 194);
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* display: inline-block; */
+    margin: 0 auto;
+}
 .box{
     position: relative;
-    /* text-align: center; */
+    text-align: center;
 }
 .boy{
     top: 15px;
@@ -56,7 +64,7 @@
 }
 .water{
     top: -140px;
-    left: 32px;
+    /* left: 32px; */
 }
 .water > img{
     width: 100px;
