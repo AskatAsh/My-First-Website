@@ -29,7 +29,7 @@ nav > ul > li:hover > .sub-nav{
 }
 /* sub-menu-1 */
 .sub-nav{
-    /* display: none; */
+    display: none;
     position: absolute;
     margin-left: -15px;
     margin-top: 10px;
@@ -40,7 +40,7 @@ nav > ul > li:hover > .sub-nav{
 }
 /* sub-menu-2 */
 .sub-nav-2{
-    /* display: none; */
+    display: none;
     position: absolute;
     margin-left: -135px;
     margin-top: -28px;
