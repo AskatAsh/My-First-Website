@@ -11,6 +11,7 @@
 }
 .food{
     border: 1px solid lightgray;
+    border-radius: 7px;
 }
 .container > .food > img{
     /* width: 100px; */
@@ -23,6 +24,11 @@
     padding: 0px 15px;
 }
 /* css media query */
+@media screen and (max-width: 992px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 @media screen and (max-width: 768px) {
     .container{
         grid-template-columns: repeat(2, 1fr);
