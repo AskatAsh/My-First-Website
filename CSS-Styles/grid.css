@@ -1,6 +1,7 @@
 .items{
     border: 2px solid;
     box-sizing: border-box;
+    padding: 20px;
 }
 .container{
     display: grid;
@@ -8,5 +9,7 @@
     /* grid-template-columns: 100px 200px 300px 500px; */
     /* grid-template-columns: repeat(5, 100px); */
     /* grid-template-columns: repeat(2, 1fr) 150px 100px; */
-    grid-template-columns: repeat(4, 150px);
+    grid-template-columns: repeat(5, 100px);
+    gap: 10px;
+    /* grid-gap: 10px; */
 }
