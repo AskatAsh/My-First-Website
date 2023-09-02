@@ -12,6 +12,7 @@
 .food{
     border: 1px solid lightgray;
     border-radius: 7px;
+    overflow: hidden;
 }
 .container > .food > img{
     /* width: 100px; */
@@ -22,7 +23,20 @@
 }
 .container h3, p{
     padding: 0px 15px;
+    margin: 0px 0px 15px;
 }
+.container > .food > button{
+    /* margin-left: 15px; */
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+}
+.container > .food > button:hover{
+    background-color: darkgray;
+    color: whitesmoke;
+}
+
 /* css media query */
 @media screen and (max-width: 1200px) {
     .container{
