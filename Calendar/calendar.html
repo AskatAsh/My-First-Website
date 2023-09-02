@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS calendar</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
         .calendar{
             width: 700px;
             /* height: 500px; */
@@ -17,19 +23,20 @@
         }
         .days{
             border: 2px solid #2f2f2f;
+            color: #2f2f2f;
             background-color: #fef3e5;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
-            font-size: 24px;
-            font-family: sans-serif;
-            font-weight: bold;
+            font-size: 20px;
+            /* font-weight: bold; */
             border-radius: 20px;
         }
     </style>
 </head>
 <body>
+    <h1>Calendar using css grid and flex box</h1>
     <div class="calendar">
         <div class="days">27</div>
         <div class="days">28</div>
