@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 .container{
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -24,6 +26,17 @@
 .container h3, p{
     padding: 0px 15px;
     margin: 0px 0px 15px;
+}
+/* display a multi-line truncated text with an ellipsis */
+.container > .food p{
+    /* max-height: 36px; */
+    overflow: hidden;/* Hides overflowing content */
+    /* white-space: nowrap; */
+    display: -webkit-box; /* -webkit-box display value for multi-line truncation */
+    -webkit-line-clamp: 2;/* Limits the title to 2 lines */
+    -webkit-box-orient: vertical;/* Vertical orientation for the box */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
 }
 .container > .food > button{
     /* margin-left: 15px; */
