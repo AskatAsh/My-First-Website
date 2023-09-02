@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS calendar</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
         }
-        .t-center{
+
+        .t-center {
             text-align: center;
         }
-        .m-tb{
-            margin: 20px 0px;
+
+        .m-tb {
+            margin: 1em 0px;
         }
-        .calendar{
+
+        .calendar {
             /* width: 700px; */
             width: 70%;
             /* height: 500px; */
@@ -30,7 +34,8 @@
             /* column-gap: 20px; */
             column-gap: 1em;
         }
-        .dates{
+
+        .dates {
             /* border: 2px solid #2f2f2f; */
             color: #2f2f2f;
             background-color: #fef3e5;
@@ -45,22 +50,35 @@
             /* border-radius: 20px; */
             border-radius: 1em;
         }
-        .days{
+
+        .days {
             /* padding: 10px; */
             padding: 1em;
             background-color: aliceblue;
         }
-        .dates:hover{
+
+        .dates:hover {
             background-color: #2f2f2f;
             color: #fef3e5;
         }
-        .today{
+
+        .today {
             /* background-color: #2f2f2f;
             color: #fef3e5; */
             border: 2px solid #2f2f2f;
         }
+
+        @media screen and (max-width: 576px) {
+            .calendar {
+                width: 100%;
+                /* margin: 1em; */
+                row-gap: 0.5em;
+                column-gap: 0.5em;
+            }
+        }
     </style>
 </head>
+
 <body>
     <h1 class="t-center m-tb">Calendar using css grid and flex box</h1>
     <hr size="1" color="lightgray">
@@ -110,4 +128,5 @@
         <div class="dates">30</div>
     </div>
 </body>
+
 </html>
