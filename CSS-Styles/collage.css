@@ -27,9 +27,38 @@ img{
 
 /* responsive media query */
 @media screen and (max-width: 992px){
-    .row{
+    /* .row{
         flex-direction: column;
         height: auto;
+    } */
+    .row{
+        height: auto;
+        display: inline;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+    .row > div{
+        flex: 1;
+    }
+    .vertical-image > img{
+        height: auto;
+        /* height: calc((100% - 5px)/2); */
+    }
+    .grid-image{
+        /* display: inline; */
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+    .grid-image > img{
+        height: auto;
+        /* height: calc(200px - 2.5px); */
+    }
+    img{
+        margin-bottom: 5px;
+    }
+    .grid-image{
+        margin-bottom: 5px;
     }
 }
 @media screen and (max-width: 576px) {
