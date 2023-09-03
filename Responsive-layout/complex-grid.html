@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complex grid layout</title>
+    <style>
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 150px) 100px;
+            gap: 30px;
+        }
+        .box{
+            background-color: gray;
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box-1{
+            grid-row: span 4;
+        }
+        .footer{
+            display: grid;
+            row-gap: 15px;
+            grid-column: span 3;
+        }
+        #box-6, #box-7, #box-9, #box-10{
+            background-color: rgb(233, 110, 110);
+        }
+    </style>
 </head>
 <body>
     <h1>A complex grid layout</h1>
@@ -18,8 +46,10 @@
         <div class="box" id="box-8">Box-8</div>
         <div class="box" id="box-9">Box-9</div>
         <div class="box" id="box-10">Box-10</div>
-        <div class="box" id="box-11">Box-11</div>
-        <div class="box" id="box-12">Box-12</div>
+        <div class="footer">
+            <div class="box" id="box-11">Box-11</div>
+            <div class="box" id="box-12">Box-12</div>
+        </div>
     </div>
 </body>
 </html>
