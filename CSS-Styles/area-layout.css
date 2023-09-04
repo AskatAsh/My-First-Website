@@ -31,3 +31,9 @@
     "footer footer  footer  footer"
     ;
 }
+
+@media screen and (max-width: 576px){
+    .container{
+        grid-template-areas: "header" "nav" "advertise" "main" "sidebar" "footer";
+    }
+}
